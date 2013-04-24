@@ -1,11 +1,11 @@
 class AddAttachmentPhotoToImages < ActiveRecord::Migration
   def self.up
-    create_table :images do |t|
+    change_table :images do |t|
       t.attachment :photo
     end
   end
 
   def self.down
-    drop_table :images
+    drop_attached_file :images, :photo
   end
 end
