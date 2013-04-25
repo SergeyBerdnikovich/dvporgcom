@@ -17,4 +17,13 @@ class PagesController < ApplicationController
 
   def seo_optimization
   end
+
+  def works
+  end
+
+  def team
+  end
+
+  def contacts
+  end
 end
