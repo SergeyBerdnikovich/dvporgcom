@@ -1,20 +1,19 @@
 Dvporgcom::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
 
-  get "news/show"
-
-  get "news/index"
-
   root :to => 'pages#welcome'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
   resources :projects, :only => [:show]
-
+  resources :news, :only => [:show, :index]
   get "pages/welcome"
+  get "pages/design"
+  get "pages/development"
+  get "pages/seo_optimization"
+  resources :pages, :only => [:show]
 
-  get "pages/show"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -31,7 +31,7 @@
                 <p>
                   <img class="fleft" src="<%= project.image.photo.url(:normal) %>" border="0"/>
                   <span class="text-1"><%= project.title %></span>
-                  <span class="text-2">Developing</span>
+                  <span class="text-2"><%= project.project_type %></span>
                 </p>
                 <p class="portfolio-p"><%= project.description %></p>
                 <p>
@@ -72,7 +72,7 @@
             <div class="boxIndent">
               <p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis</p>
               <p>
-                <a class="button" href="#">Read More</a>
+                <a class="button" href="<%= pages_design_path %>">Read More</a>
               </p>
             </div>
           </div>
@@ -93,7 +93,7 @@
             <div class="boxIndent">
               <p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis</p>
               <p>
-                <a class="button" href="#">Read More</a>
+                <a class="button" href="<%= pages_development_path %>">Read More</a>
               </p>
             </div>
           </div>
@@ -114,7 +114,7 @@
             <div class="boxIndent">
               <p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis</p>
               <p>
-                <a class="button" href="#">Read More</a>
+                <a class="button" href="<%= pages_seo_optimization_path %>">Read More</a>
               </p>
             </div>
           </div>
@@ -144,7 +144,7 @@
                   <ul>
                     <% @projects.each do |project| %>
                       <li>
-                        <a href="#">
+                        <a href="<%= project_path(project) %>">
                           <img src="<%= project.image.photo.url(:for_gallery) %>" border="0" width="138" height="138"/>
                         </a>
                       </li>
@@ -176,7 +176,7 @@
               <div class="boxIndent">
                 <p><%= Sanitize.clean(news.content[0..250])+'...' %></p>
                 <p>
-                  <a class="button" href="#">Read more</a>
+                  <a class="button" href="<%= news_path(news) %>">Read more</a>
                 </p>
               </div>
             </div>

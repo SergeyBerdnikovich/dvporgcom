@@ -8,7 +8,7 @@
   <%= csrf_meta_tags %>
   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
   <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
-  <title>Slicer</title>
+  <title>DVPorg</title>
   <link rel="stylesheet" href="/assets/maket/slider.css" type="text/css"/>
   <script type="text/javascript" src="/assets/maket/mootools.js"></script>
   <script type="text/javascript" src="/assets/maket/caption.js"></script>
@@ -61,7 +61,7 @@
       <div class="header-bg">
         <div class="head">
           <h1 id="logo">
-            <a href="/joomla_33822/index.php" title="Slicer">
+            <a href="/" title="Slicer">
               <img title="Slicer" src="/assets/maket/logo.png" alt="Slicer"/>
             </a>
           </h1>
@@ -198,10 +198,9 @@
                   <li><a href="#">Program Management</a></li>
                 </ul>
                 <ul class="foot_list">
-                  <li><a href="#">Regulatory Support</a></li>
-                  <li><a href="#">Risk Assessment</a></li>
-                  <li><a href="#">Change Management</a></li>
-                  <li><a href="#">Information Technology</a></li>
+                  <% @layout_pages.each do |page| %>
+                    <li><a href="<%= page_path(page) %>"><%= page.title %></a></li>
+                  <% end %>
                 </ul>
               </div>
             </div>
@@ -236,8 +235,8 @@
             </div>
           </div>
         </div>
-        <div class="copy">Slicer &copy; 2011
-          <a href="#">Privacy Policy</a>
+        <div class="copy">DVPorg &copy; 2013
+          <a href="dvporg.com">Privacy Policy</a>
         </div>
       </div>
     </div>

@@ -1,2 +1,14 @@
-<h1>News#index</h1>
-<p>Find me in app/views/news/index.html.erb</p>
+<div class="news_index">
+  <table>
+    <tr>
+      <td>Date</td>
+      <td>Title</td>
+    </tr>
+    <% @news.each do |news| %>
+      <tr>
+        <td><%= news.created_at.strftime("%m/%d") %></td>
+        <td><%= link_to news.title, news %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

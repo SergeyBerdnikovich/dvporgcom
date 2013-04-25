@@ -6,5 +6,15 @@ class PagesController < ApplicationController
   end
 
   def show
+    @page = Page.find(params[:id])
+  end
+
+  def design
+  end
+
+  def development
+  end
+
+  def seo_optimization
   end
 end
