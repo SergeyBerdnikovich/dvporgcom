@@ -1,6 +1,16 @@
 Dvporgcom::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
+
+  get "news/show"
+
+  get "news/index"
+
+  root :to => 'pages#welcome'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
+  resources :projects, :only => [:show]
 
   get "pages/welcome"
 
@@ -55,7 +65,7 @@ Dvporgcom::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'pages#welcome'
+
 
   # See how all your routes lay out with "rake routes"
 

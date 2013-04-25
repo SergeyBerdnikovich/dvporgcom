@@ -2,11 +2,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
 <head>
+  <%= yield :head %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-  <meta name="robots" content="index, follow"/>
-  <meta name="keywords" content="joomla, Joomla"/>
-  <meta name="description" content="Joomla! - the dynamic portal engine and content management system"/>
-  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management"/>
   <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
   <title>Slicer</title>
   <link rel="stylesheet" href="/assets/maket/slider.css" type="text/css"/>
@@ -32,11 +32,11 @@
     var $j = jQuery.noConflict();
 
     preloadImages([
-      '/joomla_33822/templates/theme690/images/button1_hover.png',
-      '/joomla_33822/templates/theme690/images/button_newsletter_hover.png',
-      '/joomla_33822/templates/theme690/images/prev_hover.png',
-      '/joomla_33822/templates/theme690/images/button_portfolio_hover.png',
-      '/joomla_33822/templates/theme690/images/button_hover.png'
+      '/assets/maket/button1_hover.png',
+      '/assets/maket/button_newsletter_hover.png',
+      '/assets/maket/prev_hover.png',
+      '/assets/maket/button_portfolio_hover.png',
+      '/assets/maket/button_hover.png'
     ]);
   </script>
   <script type="text/javascript">
@@ -53,11 +53,7 @@
     <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0"  alt="" /></a>
     </div>
 <![endif]-->
-  <link rel="stylesheet" href="/assets/maket/constant.css" type="text/css"/>
-  <link rel="stylesheet" href="/assets/maket/template.css" type="text/css"/>
-  <link rel="stylesheet" href="/assets/maket/superfish.css" type="text/css"/>
-  <link rel="stylesheet" href="/assets/maket/superfish-navbar.css" type="text/css"/>
-  <link rel="stylesheet" href="/assets/maket/superfish-vertical.css" type="text/css"/>
+
 </head>
 <body id="body" class=" index-page">
   <div class="main">
@@ -73,7 +69,7 @@
           <div id="nav">
             <ul class="menu sf-menu sf-horizontal">
               <li id="current" class="first-child active item53">
-                <a href="http://livedemo00.template-help.com/joomla_33822/">
+                <a href="/">
                   <span>Home</span>
                 </a>
               </li>
@@ -127,7 +123,7 @@
                 </a>
               </li>
               <li class="last-child item58">
-                <a href="/joomla_33822/index.php?option=com_contactmap&amp;view=contactmap&amp;id=1&amp;Itemid=58">
+                <a href="#">
                   <span>Contacts</span>
                 </a>
               </li>
@@ -137,307 +133,9 @@
         </div>
       </div>
     </div>
-    <div class="slide_bg_tail">
-      <div class="slide_bg">
-        <div class="slides">
-          <script type="text/javascript" language="javascript">
-            var $asj = jQuery.noConflict();
-            $asj(function () {
-              function formatText(index, panel) {
-              return index + "";
-              }
-              $asj('.anythingSlider').anythingSlider({
-                easing: "easeInOutExpo",
-                autoPlay: true,
-                delay: 8000,
-                showStartStop: false,
-                startStopped: false,
-                animationTime: 600,
-                hashTags: true,
-                buildNavigation: true,
-                pauseOnHover: false,
-                startText: "Start",
-                stopText: "Stop",
-                navigationFormatter: formatText
-              });
-            });
-          </script>
-          <div class="anythingSlider">
-            <div class="wrapper">
-              <ul>
-                <li id='slide0'>
-                  <p>
-                    <img class="fleft" src="/assets/maket/img_slide1.jpg" border="0"/>
-                    <span class="text-1">Professional Website</span>
-                    <span class="text-2">Developing</span>
-                  </p>
-                  <p class="portfolio-p">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Prae sent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Pha sellus porta. Fusce suscipit varius mi.</p>
-                  <p>
-                    <a class="read_portfolio" href="/joomla_33822/index.php?option=com_content&amp;view=article&amp;id=62&amp;Itemid=59"></a>
-                  </p>
-                </li>
-                <li id='slide1'>
-                  <p>
-                    <img class="fleft" src="/assets/maket/img_slide2.jpg" border="0"/>
-                    <span class="text-1">Professional Website</span>
-                    <span class="text-2">Developing</span>
-                  </p>
-                  <p class="portfolio-p">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Prae sent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Pha sellus porta. Fusce suscipit varius mi.</p>
-                  <p>
-                    <a class="read_portfolio" href="/joomla_33822/index.php?option=com_content&amp;view=article&amp;id=64&amp;Itemid=60"></a>
-                  </p>
-                </li>
-                <li id='slide2'>
-                  <p>
-                    <img class="fleft" src="/assets/maket/img_slide3.jpg" border="0"/>
-                    <span class="text-1">Professional Website</span>
-                    <span class="text-2">Developing</span>
-                  </p>
-                  <p class="portfolio-p">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Prae sent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Pha sellus porta. Fusce suscipit varius mi.</p>
-                  <p>
-                    <a class="read_portfolio" href="/joomla_33822/index.php?option=com_content&amp;view=article&amp;id=65&amp;Itemid=62"></a>
-                  </p>
-                </li>
-                <li id='slide3'>
-                  <p>
-                    <img class="fleft indent-img" src="/assets/maket/img_slide4.jpg" border="0"/>
-                    <span class="text-1">Professional Website</span>
-                    <span class="text-2">Developing</span>
-                  </p>
-                  <p class="portfolio-p">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Prae sent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Pha sellus porta. Fusce suscipit varius mi.</p>
-                  <p>
-                    <a class="read_portfolio" href="/joomla_33822/index.php?option=com_content&amp;view=article&amp;id=59&amp;Itemid=97"></a>
-                  </p>
-                </li>
-                <li id='slide4'>
-                  <p>
-                    <img class="fleft" src="/assets/maket/img_slide5.jpg" border="0"/>
-                    <span class="text-1">Professional Website</span>
-                    <span class="text-2">Developing</span>
-                  </p>
-                  <p class="portfolio-p">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Prae sent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Pha sellus porta. Fusce suscipit varius mi.</p>
-                  <p>
-                    <a class="read_portfolio" href="/joomla_33822/index.php?option=com_content&amp;view=article&amp;id=63&amp;Itemid=98"></a>
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content_bg">
-      <div class="top-title">
-        <div class="wrapper-box module">
-          <div class="clear">
-            <div class="boxIndent">
-              <h2>We produce designs that are creative</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cols_bg_bottom">
-        <div class="cols">
-          <div class="col-1">
-            <div class="wrapper-box module">
-              <div class="boxTitle">
-                <div class="title">
-                  <div class="right-bg">
-                    <div class="left-bg">
-                      <h3>Design</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="clear">
-                <div class="boxIndent">
-                  <p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis</p>
-                  <p>
-                    <a class="button" href="/joomla_33822/index.php?option=com_content&amp;view=article&amp;id=63&amp;Itemid=98">Read More</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="wrapper-box module">
-              <div class="boxTitle">
-                <div class="title">
-                  <div class="right-bg">
-                    <div class="left-bg">
-                      <h3>Development</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <div class="clear">
-              <div class="boxIndent">
-                <p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis</p>
-                <p>
-                  <a class="button" href="/joomla_33822/index.php?option=com_content&amp;view=article&amp;id=64&amp;Itemid=60">Read More</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="wrapper-box module">
-            <div class="boxTitle">
-              <div class="title">
-                <div class="right-bg">
-                  <div class="left-bg">
-                    <h3>SEO Optimization</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="clear">
-              <div class="boxIndent">
-                <p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis</p>
-                <p>
-                  <a class="button" href="/joomla_33822/index.php?option=com_content&amp;view=article&amp;id=65&amp;Itemid=62">Read More</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="slide-recent_bg">
-      <div class="slide-recent">
-        <div class="wrapper-box module">
-          <div class="boxTitle">
-            <div class="title">
-              <div class="right-bg">
-                <div class="left-bg">
-                  <h3>Recent Works</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="clear2">
-            <div class="boxIndent">
-              <div class="carousel-box">
-                <button class="prev"></button>
-                <button class="next"></button>
-                <div class="inner">
-                  <div class="carousel">
-                    <ul>
-                      <li>
-                        <a href="/joomla_33822/index.php?option=com_content&amp;view=article&amp;id=62&amp;Itemid=59">
-                          <img src="/assets/maket/index_img1.jpg" border="0" width="138" height="138"/>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/joomla_33822/index.php?option=com_content&amp;view=article&amp;id=62&amp;Itemid=59">
-                          <img src="/assets/maket/index_img2.jpg" border="0" width="138" height="138"/>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/joomla_33822/index.php?option=com_content&amp;view=article&amp;id=64&amp;Itemid=60">
-                          <img src="/assets/maket/index_img3.jpg" border="0" width="138" height="138"/>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/joomla_33822/index.php?option=com_content&amp;view=article&amp;id=65&amp;Itemid=62">
-                          <img src="/assets/maket/index_img4.jpg" border="0" width="138" height="138"/>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/joomla_33822/index.php?option=com_content&amp;view=article&amp;id=59&amp;Itemid=97">
-                          <img src="/assets/maket/index_img5.jpg" border="0" width="138" height="138"/>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="date">
-      <div class="cols2">
-        <div class="col-4">
-          <div class="wrapper-box module">
-            <div class="boxTitle">
-              <div class="title">
-                <div class="right-bg">
-                  <div class="left-bg">
-                    <h3>Jan 18</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="clear">
-              <div class="boxIndent">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum tincidunt justo, nec dapibus ipsum pretium in. Sed ut neque in diam ultricies semper. Ut molestie orci in sapien vehicula tempor. Nam quis lacus nunc, eget ferment</p>
-                <p>
-                  <a class="button" href="/joomla_33822/index.php?option=com_content&amp;view=article&amp;id=66&amp;Itemid=59">Read more</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-5">
-          <div class="wrapper-box module">
-            <div class="boxTitle">
-              <div class="title">
-                <div class="right-bg">
-                  <div class="left-bg">
-                    <h3>Jan 21</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="clear">
-              <div class="boxIndent">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum tincidunt justo, nec dapibus ipsum pretium in. Sed ut neque in diam ultricies semper. Ut molestie orci in sapien vehicula tempor. Nam quis lacus nunc, eget ferment</p>
-                <p>
-                  <a class="button" href="/joomla_33822/index.php?option=com_content&amp;view=article&amp;id=67&amp;Itemid=59">Read more</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="wrapper-box module">
-            <div class="boxTitle">
-              <div class="title">
-                <div class="right-bg">
-                  <div class="left-bg">
-                    <h3>Jan 24</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="clear">
-              <div class="boxIndent">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum tincidunt justo, nec dapibus ipsum pretium in. Sed ut neque in diam ultricies semper. Ut molestie orci in sapien vehicula tempor. Nam quis lacus nunc, eget ferment</p>
-                <p>
-                  <a class="button" href="/joomla_33822/index.php?option=com_content&amp;view=article&amp;id=68&amp;Itemid=59">Read more</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper-content content-top ">
-      <div class="grey_bg">
-        <div id="content">
-          <div class="clear">
-            <div class="container">
-              <div class="clear">
-                <table class="blogindex-page" cellpadding="0" cellspacing="0"></table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+<%= yield %>
+
   <div class="footer">
     <div class="foot_bg">
       <div class="foot">
@@ -549,4 +247,5 @@
 <script type="text/javascript"> Cufon.now(); </script>
 <script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"d1ros97qkrwjf5.cloudfront.net/42/eum/rum.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-1.newrelic.com","72d7dcce33","1388850","ZV1TZ0FTVkFVWkwKXlwXcFBHW1dcG3pXDUVXVkVwXFxMQFtVVAZDHVxYQENeWUs=",0,2844,new Date().getTime(),"","","","",""]);</script>
 </body>
+<%= yield :scripts %>
 </html>

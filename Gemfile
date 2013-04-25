@@ -10,6 +10,8 @@ gem 'mysql2'
 
 gem "paperclip"
 gem "activeadmin"
+gem "ckeditor"
+gem "sanitize"
 
 
 # Gems used only for assets and not required

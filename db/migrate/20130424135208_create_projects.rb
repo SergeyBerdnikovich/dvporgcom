@@ -4,10 +4,8 @@ class CreateProjects < ActiveRecord::Migration
       t.string :title
       t.text :description
       t.integer :date
-      t.references :image
 
       t.timestamps
     end
-    add_index :projects, :image_id
   end
 end
