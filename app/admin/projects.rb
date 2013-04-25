@@ -3,6 +3,7 @@ ActiveAdmin.register Project do
     f.inputs "Project" do
       f.input :title
       f.input :description
+      f.input :project_type
       f.input :date
     end
     f.inputs "Photo",
@@ -23,6 +24,7 @@ ActiveAdmin.register Project do
       row :id
       row :title
       row :description
+      row :project_type
       row :date
       row :created_at
       row :updated_at
